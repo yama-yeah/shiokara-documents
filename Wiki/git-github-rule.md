@@ -1,9 +1,9 @@
 # ブランチについて
 - Git flowというモデルで開発を進めようと考えています。
   - [提唱された記事](https://nvie.com/posts/a-successful-git-branching-model/)
-  - [日本語で説明されてる記事](https://cloudsmith.co.jp/blog/efficient/2020/08/1534208.html)
+  - [日本語で説明されてる記事](https://qiita.com/KosukeSone/items/514dd24828b485c69a05#3%E6%A9%9F%E8%83%BD%E3%81%AE%E4%BD%9C%E6%88%90%E3%82%92%E8%A1%8C%E3%81%86%E3%81%9F%E3%82%81%E3%81%ABfeature-branch%E3%82%92%E5%88%87%E3%82%8B)
   - 以上の形に沿って、**今回の開発に適した形で**の運用を行います。
-  - 以下は今回のブランチモデルで扱う基本的なブランチ３種です
+  - 以下は今回の開発で扱う基本的なブランチ３種です
 - `main`ブランチは各スプリントの成果をマージしていきます。()
 - `develop`ブランチは基本の開発ブランチです。ここからブランチを切って開発してください。
 - `feature/hoge(hogeは任意の機能名)`例：feature/login-screen
