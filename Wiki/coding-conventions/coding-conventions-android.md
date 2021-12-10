@@ -2,7 +2,7 @@
 - 全て小文字
 
 # ファイル、クラス名
-- UpperCamelCase
+- UpperCamelCase(例：MainActivity.kt)
 - 名詞
 - Activity、Fragment、Adapterなどのコンポーネント名は末尾に付ける
 
@@ -11,9 +11,9 @@
 - 動詞で始める。
   - fetch: インターネットから情報を取得する時
   - is: Booleanを返す時
+  - とりあえず相手に関数がどうゆう振る舞いをするのかが伝わればOK
+  - 処理が複雑になってきたらコメント文で何が行われているのか説明しよう！
   - ニュアンスなどが知りたい場合は[こちらの記事](https://php-archive.net/php/words-in-function-names/)を読んでください。
-- 引数が複数の場合、カンマの後にスペースを開けましょう。
-- 「)」と「{」の間にスペースを開けましょう。
 ```kotlin
 // 良き
 fun sendMessage(message: String, subMessage: String) {
@@ -22,13 +22,6 @@ fun sendMessage(message: String, subMessage: String) {
 // ダメ、先頭が大文字のUpperCamelCaseになってる
 fun SendMessage(message: String, subMessage: String) {
 }
-
-// ダメ、引数のカンマの後や、「)」と「{」の間にスペースが無い
-fun sendMessage(message: String,subMessage: String){
-}
-
-// ダメ、引数のカンマの後にスペースが無い
-object.sendMessage("hogehoge","fugafuga")
 ```
 
 # 変数名
@@ -60,6 +53,7 @@ var userValue:UserValue=getUserValue()
 
 # ローカル変数名
 - 関数内などで扱う変数名ですが、適切な命名を心がけましょう。
+- できる限り、何に使う変数なのかについてのコメントを日本語で書きましょう
 - 使い捨ての変数の場合、`tmp`(temporary)を使用しても構いませんが、あまり望ましくありません。どうしても使用する場合はどのような変数なのかコメントに記述するようにしましょう。
 
 # 定数名
