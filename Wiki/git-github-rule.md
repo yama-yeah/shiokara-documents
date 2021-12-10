@@ -15,7 +15,7 @@
   - `add:` 機能などの追加を行った時
   - `fix:` バグ修正
   - `refactor:` 仕様に影響がないコード改善(リファクタ)
-  - 例：`add: fetch tasks function for api class`
+  - 例：`git commit -m "add: fetch tasks function for api class"`
 - 進捗全然ねえ～という場合でも作業ブランチであれば他の人に迷惑かけないので積極的にコミットしましょう。具体的にいうなら2時間に1回程度が望ましいです。(Gitは作業内容を戻せるからどんどんやりましょう)
 
 # Pull Request(以下PR)について
